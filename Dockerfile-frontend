@@ -1,0 +1,9 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY reactapp/package.json /app
+RUN npm install
+COPY reactapp/. /app
+
+CMD ["npm","start"]
