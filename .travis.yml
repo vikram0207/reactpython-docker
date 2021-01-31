@@ -5,7 +5,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t vikram0207/hwrfrontend -f Dockerfile.dev .
+  - docker build -t vikram0207/hwrfrontend -f Dockerfile.frontend .
 
 script:
   - docker run -e CI=true vikram0207/hwrfrontend npm run test
