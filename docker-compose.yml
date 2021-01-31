@@ -4,13 +4,13 @@ services:
     stdin_open: true
     build:
       context: .
-      dockerfile: Dockerfile-frontend
+      dockerfile: Dockerfile.frontend
     ports:
       - "3000:3000"
   backend:
     stdin_open: true
     build:
       context: .
-      dockerfile: Dockerfile-backend
+      dockerfile: Dockerfile.backend
     ports:
       - "8000:8000"  
