@@ -8,5 +8,5 @@ before_install:
   - docker build -t vikram0207/hwrfrontend -f Dockerfile.frontend .
 
 script:
-  - docker run -e CI=true vikram0207/hwrfrontend npm install & npm run test
+  - docker run -e CI=true vikram0207/hwrfrontend cd reactapp & npm run test
 
