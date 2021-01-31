@@ -72,7 +72,7 @@ const Login = () => {
           />
           <br />
           <button className="button" type="submit">
-            Entrar
+            Enter
           </button>
           <br />
           <Link to="/signup" className="back-link">
